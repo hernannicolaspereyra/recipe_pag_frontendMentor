@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+/* estilos generales */
+
+html {
+    background-color: hsl(30, 54%, 90%);
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    margin: 50px auto;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(14, 45%, 36%);
+}
+
+h3, span {
+    color: hsl(332, 51%, 32%);
+}
+
+p {
+    color: hsl(30, 10%, 34%);
+}
+
+hr{
+    margin: 30px 0;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+header img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* seccion preparacion */
+
+.preparacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 25px;
+    margin: 20px 0;
+    gap: 1rem;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 15px;
+}
+
+.preparacion ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 50px;
+}
+
+/* seccion ingredientes */
+
+.ingredientes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ingredientes ul{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding-left: 25px; 
+}
+
+/* seccion instrucciones */
+
+.instrucciones{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.instrucciones ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 25px;
+}
+
+/* seccion nutricion */
+
+.nutricion{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nutricion table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+    text-align: start;
+}
+
+.nutricion table tr{
+    border-bottom: 2px solid hsl(30, 10%, 34%);
+    padding: 200px;
+}
+
+/* footer */
+
+footer .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px){
+
+    /* media mobile */
+
+    /* estilos generales */
+    body{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    /* header */
+
+    header img{
+        border-radius: 0;
+    }
+}
